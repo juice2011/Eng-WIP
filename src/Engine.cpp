@@ -1,4 +1,6 @@
-#include "eng.hpp"
+#include "../include/eng.hpp"
+
+using namespace eng;
 
 Engine CreateEngine(AppData data)
 {
@@ -6,7 +8,7 @@ Engine CreateEngine(AppData data)
 	if (glfwInit() != 0)
 		return NULL;
 	
-	put fullscreen code here
+	//put fullscreen code here
 	
 	e.window = glfwCreateWindow(data.title
 }
