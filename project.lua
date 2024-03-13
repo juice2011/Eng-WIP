@@ -6,6 +6,7 @@ project "ENG"
    language "C++"
    architecture "x86_64"
    cppdialect "C++20"
+   libdirs {"../Eng/libs"}
 
    files { "**.h", "**.cpp", "**.hpp" }
 
@@ -18,3 +19,5 @@ project "ENG"
       defines { "NDEBUG" }
       targetdir "bin/win_release"
       optimize "On"
+
+   links { "glfw3", "glew32s", "opengl32" }

@@ -1,6 +1,8 @@
-#include "eng.hpp"
+#include "../include/eng.hpp"
 
-/*template<typename T> T Object::AddComponent()
+using namespace eng;
+
+std::size_t Object::AddModule(Module* mod)
 {
-	this.modules.push_back(T); 
-}*/
+	modules.push_back(mod);
+}
