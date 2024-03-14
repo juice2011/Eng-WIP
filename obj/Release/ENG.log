@@ -1,0 +1,76 @@
+﻿  Camera.cpp
+C:\Eng\include\RenderComponents.hpp(9,7): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'src/Camera.cpp')
+  
+C:\Eng\include\RenderComponents.hpp(9,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/Camera.cpp')
+  
+C:\Eng\include\RenderComponents.hpp(9,17): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'src/Camera.cpp')
+  
+C:\Eng\include\Modules.hpp(13,32): error C2504: 'Module': base class undefined
+  (compiling source file 'src/Camera.cpp')
+  
+C:\Eng\include\Modules.hpp(19,8): error C3668: 'eng::modules::ObjectRenderer::Start': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Camera.cpp')
+  
+C:\Eng\include\Modules.hpp(20,8): error C3668: 'eng::modules::ObjectRenderer::Update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Camera.cpp')
+  
+C:\Eng\include\Modules.hpp(21,8): error C3668: 'eng::modules::ObjectRenderer::Exit': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Camera.cpp')
+  
+C:\Eng\include\Modules.hpp(23,8): error C3668: 'eng::modules::ObjectRenderer::Render': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Camera.cpp')
+  
+  Engine.cpp
+C:\Eng\include\RenderComponents.hpp(9,7): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'src/Engine.cpp')
+  
+C:\Eng\include\RenderComponents.hpp(9,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/Engine.cpp')
+  
+C:\Eng\include\RenderComponents.hpp(9,17): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'src/Engine.cpp')
+  
+C:\Eng\include\Modules.hpp(13,32): error C2504: 'Module': base class undefined
+  (compiling source file 'src/Engine.cpp')
+  
+C:\Eng\include\Modules.hpp(19,8): error C3668: 'eng::modules::ObjectRenderer::Start': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Engine.cpp')
+  
+C:\Eng\include\Modules.hpp(20,8): error C3668: 'eng::modules::ObjectRenderer::Update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Engine.cpp')
+  
+C:\Eng\include\Modules.hpp(21,8): error C3668: 'eng::modules::ObjectRenderer::Exit': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Engine.cpp')
+  
+C:\Eng\include\Modules.hpp(23,8): error C3668: 'eng::modules::ObjectRenderer::Render': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Engine.cpp')
+  
+  Object.cpp
+C:\Eng\include\RenderComponents.hpp(9,7): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'src/Object.cpp')
+  
+C:\Eng\include\RenderComponents.hpp(9,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/Object.cpp')
+  
+C:\Eng\include\RenderComponents.hpp(9,17): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'src/Object.cpp')
+  
+C:\Eng\include\Modules.hpp(13,32): error C2504: 'Module': base class undefined
+  (compiling source file 'src/Object.cpp')
+  
+C:\Eng\include\Modules.hpp(19,8): error C3668: 'eng::modules::ObjectRenderer::Start': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Object.cpp')
+  
+C:\Eng\include\Modules.hpp(20,8): error C3668: 'eng::modules::ObjectRenderer::Update': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Object.cpp')
+  
+C:\Eng\include\Modules.hpp(21,8): error C3668: 'eng::modules::ObjectRenderer::Exit': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Object.cpp')
+  
+C:\Eng\include\Modules.hpp(23,8): error C3668: 'eng::modules::ObjectRenderer::Render': method with override specifier 'override' did not override any base class methods
+  (compiling source file 'src/Object.cpp')
+  
+  Generating Code...
