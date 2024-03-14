@@ -1,5 +1,6 @@
 #include "../include/eng.hpp"
-
+#include "../include/Meshes.hpp" // Provides basic mesh templates
+#include "../include/Materials.hpp" // Provides shaders
 using namespace eng::rendering;
 
 eng::AppData appdata = {
@@ -36,13 +37,11 @@ int main()
 
 	eng::Object obj = engine.CreateObject((char*)"test object", transform);
 
-
-
 	ObjectRenderer renderobject;
 
 	renderobject.Create(renderdata);
 
-	obj.AddModule(renderobject);
+	obj.AddModule(&renderobject);
 
 	while (engine.Running())
 	{

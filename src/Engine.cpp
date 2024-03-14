@@ -16,8 +16,8 @@ Engine eng::CreateEngine(AppData data)
 	glfwWindowHint(GLFW_GREEN_BITS, mode->greenBits);
 	glfwWindowHint(GLFW_BLUE_BITS, mode->blueBits);
 	glfwWindowHint(GLFW_REFRESH_RATE, mode->refreshRate);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 
 	e.window = glfwCreateWindow(data.width == fullscreen ? mode->width : data.width, data.height == fullscreen ? mode->height : data.height, data.title, monitor, NULL);
 	glfwMakeContextCurrent(e.window);

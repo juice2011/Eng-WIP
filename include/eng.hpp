@@ -155,7 +155,7 @@ namespace eng {
 		std::vector<Module*> modules;
 
 
-		std::size_t AddModule(Module* mod);
+		void AddModule(Module* mod);
 	};
 
 	class Engine {

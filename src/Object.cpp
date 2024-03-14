@@ -2,7 +2,7 @@
 
 using namespace eng;
 
-std::size_t Object::AddModule(Module* mod)
+void Object::AddModule(Module* mod)
 {
-	modules.push_back(mod);
+	return modules.push_back(mod);
 }
