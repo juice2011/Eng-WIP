@@ -43,8 +43,9 @@ int main()
 
 	ObjectRenderer renderobject;
 
-	renderobject.Create(renderdata, 3, 1, eng::meshes::triangle_vertices, eng::meshes::triangle_triangles);
+	renderobject.Create(renderdata, 3, 1, eng::meshes::cube_vertices, eng::meshes::cube_triangles);
 
+	//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	while (engine.Running(engine.window))
 	{
 		camera.BeginDraw();
