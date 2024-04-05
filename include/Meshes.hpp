@@ -3,15 +3,15 @@
 
 namespace eng::meshes
 {
-    eng::Vec3 cube_vertices[8] = { 
-        eng::Vec3(-0.5f, -0.5f, -0.5f),
-        eng::Vec3(0.5f, -0.5f, -0.5f),
-        eng::Vec3(0.5f, 0.5f, -0.5f),
-        eng::Vec3(-0.5f, 0.5f, -0.5f),
-        eng::Vec3(-0.5f, -0.5f, 0.5f),
-        eng::Vec3(0.5f, -0.5f, 0.5f),
-        eng::Vec3(0.5f, 0.5f, 0.5f),
-        eng::Vec3(-0.5f, 0.5f, 0.5f) 
+    float cube_vertices[24] = {
+        -0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f, 0.5f, -0.5f,
+        -0.5f, 0.5f, -0.5f,
+        -0.5f, -0.5f, 0.5f,
+        0.5f, -0.5f, 0.5f,
+        0.5f, 0.5f, 0.5f,
+        -0.5f, 0.5f, 0.5f
     };
     int cube_triangles[36] = {
         0, 1, 3, 3, 1, 2,
@@ -21,8 +21,22 @@ namespace eng::meshes
         3, 2, 7, 7, 2, 6,
         4, 5, 0, 0, 5, 1
     };
-    eng::rendering::Mesh cube = {
+    eng::Mesh cube = {
         cube_vertices,
         cube_triangles
+    };
+
+    float triangle_vertices[9] = {
+        -0.5f, -0.5f, 1,
+        0.5f, -0.5f, 1,
+        0, 1, 0
+    };
+    int triangle_triangles[3] = {
+        1, 2, 3
+    };
+
+    eng::Mesh triangle = {
+        triangle_vertices,
+        triangle_triangles
     };
 }

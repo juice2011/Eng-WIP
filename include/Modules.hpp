@@ -1,35 +1,36 @@
 #pragma once
-#include "../include/eng.hpp"
+#include "../include/lib/glew.h"
+#include "../include/lib/glfw3.h"
+#include "../include/RenderComponents.hpp"
+#include <iostream>
 using namespace eng;
-using namespace eng::rendering;
-namespace eng::modules 
+namespace eng
 {
-	struct ObjectRendererData
-	{
-		Mesh mesh;
-		Material material;
-	};
-
-	class ObjectRenderer : public Module
+	class ObjectRendererData
 	{
 	public:
 		Mesh mesh;
 		Material material;
+	};
 
-		void Start() override {}
-		void Update() override {}
-		void Exit() override {}
+	class ObjectRenderer 
+	{
+		GLuint vbo, // Vertex Buffer Object
+			ebo, // Element Buffer Object
+			vao, // Vertex Something
+			vs, // Vertex Shader
+			fs, // Fragment Shader
+			sp; // Shader Program
+		int meshSize, // Mesh Size (in bytes)
+			meshLength, // Vertex Count
+			triCount; // Triangle Count * 3
+	public:
+		Mesh mesh;
+		Material material;
 
-		void Render() override
-		{
-			std::cout << "Rendering\n";
-		}
+		void Render();
 
-		void Create(ObjectRendererData data)
-		{
-			this->mesh = data.mesh;
-			this->material = data.material;
-		}
+		void Create(ObjectRendererData data, int vertCount, int triCount, float vertices[], int triangles[]);
 	};
 
 

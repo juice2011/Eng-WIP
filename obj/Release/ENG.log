@@ -1,76 +1,50 @@
-﻿  Camera.cpp
-C:\Eng\include\RenderComponents.hpp(9,7): error C2143: syntax error: missing ';' before '*'
-  (compiling source file 'src/Camera.cpp')
-  
-C:\Eng\include\RenderComponents.hpp(9,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'src/Camera.cpp')
-  
-C:\Eng\include\RenderComponents.hpp(9,17): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'src/Camera.cpp')
-  
-C:\Eng\include\Modules.hpp(13,32): error C2504: 'Module': base class undefined
-  (compiling source file 'src/Camera.cpp')
-  
-C:\Eng\include\Modules.hpp(19,8): error C3668: 'eng::modules::ObjectRenderer::Start': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Camera.cpp')
-  
-C:\Eng\include\Modules.hpp(20,8): error C3668: 'eng::modules::ObjectRenderer::Update': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Camera.cpp')
-  
-C:\Eng\include\Modules.hpp(21,8): error C3668: 'eng::modules::ObjectRenderer::Exit': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Camera.cpp')
-  
-C:\Eng\include\Modules.hpp(23,8): error C3668: 'eng::modules::ObjectRenderer::Render': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Camera.cpp')
-  
+﻿  UnlitCubeExample.cpp
+  Camera.cpp
   Engine.cpp
-C:\Eng\include\RenderComponents.hpp(9,7): error C2143: syntax error: missing ';' before '*'
-  (compiling source file 'src/Engine.cpp')
-  
-C:\Eng\include\RenderComponents.hpp(9,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'src/Engine.cpp')
-  
-C:\Eng\include\RenderComponents.hpp(9,17): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'src/Engine.cpp')
-  
-C:\Eng\include\Modules.hpp(13,32): error C2504: 'Module': base class undefined
-  (compiling source file 'src/Engine.cpp')
-  
-C:\Eng\include\Modules.hpp(19,8): error C3668: 'eng::modules::ObjectRenderer::Start': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Engine.cpp')
-  
-C:\Eng\include\Modules.hpp(20,8): error C3668: 'eng::modules::ObjectRenderer::Update': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Engine.cpp')
-  
-C:\Eng\include\Modules.hpp(21,8): error C3668: 'eng::modules::ObjectRenderer::Exit': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Engine.cpp')
-  
-C:\Eng\include\Modules.hpp(23,8): error C3668: 'eng::modules::ObjectRenderer::Render': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Engine.cpp')
+  engvector.cpp
+  Modules.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(4599,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'src/Modules.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(4599,18):
+  the template instantiation context (the oldest one first) is
+  	C:\Eng\src\Modules.cpp(64,10):
+  	see reference to function template instantiation '_OutIt *std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,float*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=float *,
+              _Ty=int,
+              _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(4611,31):
+  	see reference to function template instantiation '_OutIt std::_Copy_unchecked<int*,int*,_OutIt>(_InIt,_Sent,_OutIt)' being compiled
+          with
+          [
+              _OutIt=float *,
+              _InIt=int *,
+              _Sent=int *
+          ]
   
   Object.cpp
-C:\Eng\include\RenderComponents.hpp(9,7): error C2143: syntax error: missing ';' before '*'
-  (compiling source file 'src/Object.cpp')
-  
-C:\Eng\include\RenderComponents.hpp(9,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  (compiling source file 'src/Object.cpp')
-  
-C:\Eng\include\RenderComponents.hpp(9,17): error C2238: unexpected token(s) preceding ';'
-  (compiling source file 'src/Object.cpp')
-  
-C:\Eng\include\Modules.hpp(13,32): error C2504: 'Module': base class undefined
-  (compiling source file 'src/Object.cpp')
-  
-C:\Eng\include\Modules.hpp(19,8): error C3668: 'eng::modules::ObjectRenderer::Start': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Object.cpp')
-  
-C:\Eng\include\Modules.hpp(20,8): error C3668: 'eng::modules::ObjectRenderer::Update': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Object.cpp')
-  
-C:\Eng\include\Modules.hpp(21,8): error C3668: 'eng::modules::ObjectRenderer::Exit': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Object.cpp')
-  
-C:\Eng\include\Modules.hpp(23,8): error C3668: 'eng::modules::ObjectRenderer::Render': method with override specifier 'override' did not override any base class methods
-  (compiling source file 'src/Object.cpp')
-  
   Generating Code...
+glew32s.lib(glew.obj) : warning LNK4099: PDB '' was not found with 'glew32s.lib(glew.obj)' or at ''; linking object as if no debug info
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4217: symbol '__glewBindBuffer' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewBufferData' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewGenBuffers' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewAttachShader' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewCompileShader' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewCreateProgram' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewCreateShader' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewDeleteShader' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewEnableVertexAttribArray' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewGetProgramInfoLog' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewGetProgramiv' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewGetShaderInfoLog' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewGetShaderiv' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewLinkProgram' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewShaderSource' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewUseProgram' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Render(void)" (?Render@ObjectRenderer@eng@@QEAAXXZ)'
+LINK : warning LNK4217: symbol '__glewVertexAttribPointer' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewBindVertexArray' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+LINK : warning LNK4217: symbol '__glewGenVertexArrays' defined in 'glew32s.lib(glew.obj)' is imported by 'Modules.obj' in function '"public: void __cdecl eng::ObjectRenderer::Create(class eng::ObjectRendererData,int,int)" (?Create@ObjectRenderer@eng@@QEAAXVObjectRendererData@2@HH@Z)'
+  ENG.vcxproj -> C:\Eng\bin\win_release\ENG.exe

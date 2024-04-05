@@ -1,37 +1,41 @@
 #include "../include/eng.hpp"
 #include "../include/Meshes.hpp" // Provides basic mesh templates
 #include "../include/Materials.hpp" // Provides shaders
-using namespace eng::rendering;
 
 eng::AppData appdata = {
 	(char*)"Test App", // title
-	eng::fullscreen, // width
-	eng::fullscreen // height
+	500, // width
+	500 // height
 };
 
 eng::Transform transform = {
-	eng::Vec3(0, 0, 0), // position
-	eng::Vec3(0, 0, 0), // rotation
-	eng::Vec3(1, 1, 1) // scale
+	Vec3(0, 0, 0), // position
+	Vec3(0, 0, 0), // rotation
+	Vec3(1, 1, 1) // scale
 };
 
 eng::CameraData cameradata = {
 		1,
 		eng::perspective,
-		eng::Vec2(0.03f, 1000),
-		eng::Vec3(0, 0, -10),
-		eng::Vec3(0, 0, 0),
-		eng::Color(0,0,0,0)
+		Vec2(0.03f, 1000),
+		Vec3(0, 0, -10),
+		Vec3(0, 0, 0),
+		Color(0,0,0,1)
 };
 
 ObjectRendererData renderdata = {
-	eng::meshes::cube,
+	eng::meshes::triangle,
 	eng::materials::unlit
 };
 
 int main()
 {
-	eng::Engine engine = eng::CreateEngine(appdata);
+	bool yay;
+	eng::Engine engine = eng::CreateEngine(appdata , &yay);
+	if (!yay)
+	{
+		return -1;
+	}
 
 	eng::Camera camera = engine.CreateCamera(cameradata);
 
@@ -39,17 +43,13 @@ int main()
 
 	ObjectRenderer renderobject;
 
-	renderobject.Create(renderdata);
+	renderobject.Create(renderdata, 3, 1, eng::meshes::triangle_vertices, eng::meshes::triangle_triangles);
 
-	obj.AddModule(&renderobject);
-
-	while (engine.Running())
+	while (engine.Running(engine.window))
 	{
 		camera.BeginDraw();
-
-		camera.Render(renderobject);
-
-		camera.Present();
+		renderobject.Render();
+		camera.Present(engine.window);
 	}
 
 	engine.Terminate();

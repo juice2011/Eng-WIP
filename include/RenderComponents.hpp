@@ -1,24 +1,25 @@
 #pragma once
 #include "../include/eng.hpp"
-#include <iostream>
 #include <string>
-namespace eng::rendering
+#include <vector>
+namespace eng
 {
-	struct Mesh 
+	class Mesh
 	{
-		Vec3* vertices;
+	public:
+		float* vertices;
 		int* triangles;
 	};
-
 	class Shader
 	{
 	public:
-		std::string vert_data;
-		std::string frag_data;
+		char* vert_data;
+		char* frag_data;
 	};
 
 	class Material {
 	public:
 		Shader shader;
 	};
+
 }
