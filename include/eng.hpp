@@ -168,7 +168,15 @@ namespace eng {
 		Camera CreateCamera(CameraData data);
 		void Terminate();
 		bool Running(GLFWwindow* window);
+		float FPS(bool mills);
+		void InitFPS();
+	private:
+		// for fps counter
+		double lastTime;
+		int nbFrames;
 	};
 
 	Engine CreateEngine(AppData data, bool* success);
+
+	
 }

@@ -4,8 +4,8 @@
 
 eng::AppData appdata = {
 	(char*)"Test App", // title
-	500, // width
-	500 // height
+	1000, // width
+	1000 // height
 };
 
 eng::Transform transform = {
@@ -16,7 +16,7 @@ eng::Transform transform = {
 
 eng::CameraData cameradata = {
 		1,
-		eng::perspective,
+		eng::orthographic,
 		Vec2(0.03f, 1000),
 		Vec3(0, 0, -10),
 		Vec3(0, 0, 0),
@@ -24,14 +24,15 @@ eng::CameraData cameradata = {
 };
 
 ObjectRendererData renderdata = {
-	eng::meshes::triangle,
-	eng::materials::unlit
+	eng::meshes::square,
+	eng::materials::unlit_2d
 };
 
 int main()
 {
 	bool yay;
 	eng::Engine engine = eng::CreateEngine(appdata , &yay);
+	engine.InitFPS();
 	if (!yay)
 	{
 		return -1;
@@ -39,9 +40,8 @@ int main()
 
 	eng::Camera camera = engine.CreateCamera(cameradata);
 
-	eng::Object obj = engine.CreateObject((char*)"test object", transform);
-
 	ObjectRenderer renderobject;
+<<<<<<< HEAD
 
 	renderobject.Create(renderdata, 3, 1, eng::meshes::triangle_vertices, eng::meshes::triangle_triangles);
 <<<<<<< HEAD
@@ -50,6 +50,9 @@ int main()
 =======
 >>>>>>> parent of 9e3cdfb (cube rendering)
 
+=======
+	renderobject.Create(renderdata, 8, 12);
+>>>>>>> development
 	while (engine.Running(engine.window))
 	{
 		camera.BeginDraw(Color(0.2f, 0.3f, 0.6f, 1));
@@ -57,7 +60,7 @@ int main()
 		renderobject.Render();
 		camera.Present(engine.window);
 	}
-
+	
 	engine.Terminate();
 
 	return 0;
