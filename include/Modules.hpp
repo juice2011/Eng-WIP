@@ -1,4 +1,5 @@
 #pragma once
+#define GLEW_STATIC
 #include "../include/lib/glew.h"
 #include "../include/lib/glfw3.h"
 #include "../include/RenderComponents.hpp"
@@ -19,8 +20,7 @@ namespace eng
 			ebo, // Element Buffer Object
 			vao, // Vertex Something
 			vs, // Vertex Shader
-			fs, // Fragment Shader
-			sp; // Shader Program
+			fs; // Fragment Shader
 		int meshSize, // Mesh Size (in bytes)
 			meshLength, // Vertex Count
 			triCount; // Triangle Count * 3
@@ -28,9 +28,11 @@ namespace eng
 		Mesh mesh;
 		Material material;
 
+		GLuint sp;
+
 		void Render();
 
-		void Create(ObjectRendererData data, int vertCount, int triCount, float vertices[], int triangles[]);
+		void Create(ObjectRendererData data, int vertCount, int triCount);
 	};
 
 

@@ -15,6 +15,7 @@ namespace eng
 	public:
 		char* vert_data;
 		char* frag_data;
+		void SetValue(float v, std::string name, int sp);
 	};
 
 	class Material {

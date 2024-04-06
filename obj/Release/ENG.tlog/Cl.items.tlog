@@ -1,6 +1,8 @@
 C:\Eng\Examples\UnlitCubeExample.cpp;C:\Eng\obj\Release\UnlitCubeExample.obj
 C:\Eng\src\Camera.cpp;C:\Eng\obj\Release\Camera.obj
 C:\Eng\src\Engine.cpp;C:\Eng\obj\Release\Engine.obj
-C:\Eng\src\engvector.cpp;C:\Eng\obj\Release\engvector.obj
+C:\Eng\src\FileLoader.cpp;C:\Eng\obj\Release\FileLoader.obj
 C:\Eng\src\Modules.cpp;C:\Eng\obj\Release\Modules.obj
 C:\Eng\src\Object.cpp;C:\Eng\obj\Release\Object.obj
+C:\Eng\src\Shader.cpp;C:\Eng\obj\Release\Shader.obj
+C:\Eng\src\engvector.cpp;C:\Eng\obj\Release\engvector.obj
