@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  UnlitCubeExample.cpp
   LINK : bin\win_debug\ENG.exe not found or not built by the last incremental link; performing full link
 UnlitCubeExample.obj : error LNK2019: unresolved external symbol __imp_glPolygonMode referenced in function main
@@ -43,3 +44,7 @@ Shader.obj : error LNK2001: unresolved external symbol __glewUniform1f
 Shader.obj : error LNK2001: unresolved external symbol __glewUniform1i
 Shader.obj : error LNK2001: unresolved external symbol __glewUniform1d
 bin\win_debug\ENG.exe : fatal error LNK1120: 42 unresolved externals
+=======
+﻿  Modules.cpp
+  ENG.vcxproj -> C:\Eng\bin\win_debug\ENG.exe
+>>>>>>> parent of 9e3cdfb (cube rendering)

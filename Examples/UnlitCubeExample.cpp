@@ -44,8 +44,11 @@ int main()
 	ObjectRenderer renderobject;
 
 	renderobject.Create(renderdata, 3, 1, eng::meshes::triangle_vertices, eng::meshes::triangle_triangles);
+<<<<<<< HEAD
 
 	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+=======
+>>>>>>> parent of 9e3cdfb (cube rendering)
 
 	while (engine.Running(engine.window))
 	{
