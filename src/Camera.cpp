@@ -1,14 +1,10 @@
 #include "../include/eng.hpp"
 using namespace eng;
 
-void Camera::BeginDraw(Color c)
+void Camera::BeginDraw()
 {
 	glfwPollEvents();
-<<<<<<< HEAD
-	glClearColor(c.x, c.y, c.z, c.w);
-=======
 	glClearColor(backgroundColor.x, backgroundColor.y, backgroundColor.z, backgroundColor.w);
->>>>>>> development
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 

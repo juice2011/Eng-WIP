@@ -27,16 +27,12 @@ namespace eng::meshes
     };
 
     float triangle_vertices[9] = {
-        -0.5f, -0.5f, 1,
-        0.5f, -0.5f, 1,
-        0, 1, 0
+        -0.5f, -0.5f, 0,
+        0.5f, -0.5f, 0,
+        0, 0.5f, 0
     };
     int triangle_triangles[3] = {
-<<<<<<< HEAD
         1, 2, 3
-=======
-        3,2,1
->>>>>>> development
     };
 
     eng::Mesh triangle = {

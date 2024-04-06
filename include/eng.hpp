@@ -144,7 +144,7 @@ namespace eng {
 			this->backgroundColor = data.backgroundColor;
 		}
 
-		void BeginDraw(Color c);
+		void BeginDraw();
 		void Present(GLFWwindow* e);
 	};
 
@@ -167,7 +167,7 @@ namespace eng {
 		Object CreateObject(char name[], Transform transform);
 		Camera CreateCamera(CameraData data);
 		void Terminate();
-		bool Running(GLFWwindow* window);
+		bool Running();
 		float FPS(bool mills);
 		void InitFPS();
 	private:

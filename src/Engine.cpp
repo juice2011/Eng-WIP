@@ -66,7 +66,7 @@ void Engine::Terminate()
 	glfwTerminate();
 }
 
-bool Engine::Running(GLFWwindow* window)
+bool Engine::Running()
 {
 	return !glfwWindowShouldClose(window);
 }

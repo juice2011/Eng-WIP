@@ -20,18 +20,18 @@ eng::CameraData cameradata = {
 		Vec2(0.03f, 1000),
 		Vec3(0, 0, -10),
 		Vec3(0, 0, 0),
-		Color(0,0,0,1)
+		Color(0.2f, 0.3f, 0.6f, 1)
 };
 
 ObjectRendererData renderdata = {
-	eng::meshes::square,
+	eng::meshes::cube,
 	eng::materials::unlit_2d
 };
 
 int main()
 {
 	bool yay;
-	eng::Engine engine = eng::CreateEngine(appdata , &yay);
+	eng::Engine engine = eng::CreateEngine(appdata, &yay);
 	engine.InitFPS();
 	if (!yay)
 	{
@@ -41,23 +41,16 @@ int main()
 	eng::Camera camera = engine.CreateCamera(cameradata);
 
 	ObjectRenderer renderobject;
-<<<<<<< HEAD
 
-	renderobject.Create(renderdata, 3, 1, eng::meshes::triangle_vertices, eng::meshes::triangle_triangles);
-<<<<<<< HEAD
-
-	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-=======
->>>>>>> parent of 9e3cdfb (cube rendering)
-
-=======
 	renderobject.Create(renderdata, 8, 12);
->>>>>>> development
-	while (engine.Running(engine.window))
-	{
-		camera.BeginDraw(Color(0.2f, 0.3f, 0.6f, 1));
 
-		renderobject.Render();
+	while (engine.Running())
+	{
+		engine.FPS(false);
+		camera.BeginDraw();
+
+		renderobject.Render(12);
+
 		camera.Present(engine.window);
 	}
 	
