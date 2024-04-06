@@ -34,7 +34,7 @@ namespace eng::materials {
 			"out vec4 FragColor;\n"
 			"void main()\n"
 			"{\n"
-			"   FragColor = vec4(1,1,1,1);\n"
+			"   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
 			"}\n\0";
 	eng::Shader unlit_shader = {
 		(char*)blank_vert_shader,
