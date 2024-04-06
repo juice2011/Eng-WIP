@@ -1,5 +1,7 @@
 #pragma once
-#include "../include/eng.hpp"
+#define GLEW_STATIC
+#include "../include/lib/glew.h"
+#include "../include/lib/glfw3.h"
 #include <string>
 #include <vector>
 
@@ -24,5 +26,7 @@ namespace eng
 	public:
 		Shader shader;
 	};
+
+	
 
 }

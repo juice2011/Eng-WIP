@@ -1,5 +1,6 @@
 #include "../include/eng.hpp"
 
+
 using namespace eng;
 
 void error_callback(int code, const char* description)
@@ -53,6 +54,8 @@ Engine eng::CreateEngine(AppData data, bool* success)
 		return e;
 	}
 	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 	s = true;
 	success = &s;
@@ -71,17 +74,17 @@ bool Engine::Running()
 	return !glfwWindowShouldClose(window);
 }
 
-Camera Engine::CreateCamera(CameraData data)
+Camera Engine::CreateCamera(CameraData* data)
 {
-	return Camera(data);
-}
-
-Object Engine::CreateObject(char name[], Transform transform)
-{
-	Object o;
-	o.name = name;
-	o.transform = &transform;
-	return o;
+	Camera c;
+	c.backgroundColor = data->backgroundColor;
+	c.depth = data->depth;
+	c.fov = data->fov;
+	c.position = data->position;
+	c.priority = data->priority;
+	c.rotation = data->rotation;
+	c.viewPlanes = data->viewPlanes;
+	return c;
 }
 
 void Engine::InitFPS()

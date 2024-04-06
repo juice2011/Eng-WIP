@@ -1,2 +1,4 @@
-﻿  Modules.cpp
+﻿  UnlitCubeExample.cpp
+C:\Eng\Examples\UnlitCubeExample.cpp(55,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Eng\Examples\UnlitCubeExample.cpp(56,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   ENG.vcxproj -> C:\Eng\bin\win_debug\ENG.exe

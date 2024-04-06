@@ -9,6 +9,8 @@ project "ENG"
    libdirs {"../Eng/libs"}
 
    files { "**.h", "**.cpp", "**.hpp" }
+   removefiles { "Examples/*.cpp" }
+
    links { "glfw3", "glew32s", "opengl32" }
 
    filter "configurations:Debug"

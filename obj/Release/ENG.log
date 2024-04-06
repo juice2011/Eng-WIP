@@ -1,2 +1,17 @@
-﻿LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+﻿  UnlitCubeExample.cpp
+C:\Eng\Examples\UnlitCubeExample.cpp(55,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Eng\Examples\UnlitCubeExample.cpp(56,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Camera.cpp
+  Engine.cpp
+C:\Eng\src\Engine.cpp(13,43): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Eng\src\Engine.cpp(13,35): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+C:\Eng\src\Engine.cpp(13,30): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Eng\src\Engine.cpp(13,19): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\Eng\src\Engine.cpp(102,15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  FileLoader.cpp
+  Modules.cpp
+  RenderComponents.cpp
+  Generating Code...
+glew32s.lib(glew.obj) : warning LNK4099: PDB '' was not found with 'glew32s.lib(glew.obj)' or at ''; linking object as if no debug info
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   ENG.vcxproj -> C:\Eng\bin\win_release\ENG.exe

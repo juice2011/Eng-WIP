@@ -3,15 +3,15 @@
 
 namespace eng::meshes
 {
-    float cube_vertices[24] = {
-        -0.5f, -0.5f, -0.5f,
-        0.5f, -0.5f, -0.5f,
-        0.5f, 0.5f, -0.5f,
-        -0.5f, 0.5f, -0.5f,
-        -0.5f, -0.5f, 0.5f,
-        0.5f, -0.5f, 0.5f,
-        0.5f, 0.5f, 0.5f,
-        -0.5f, 0.5f, 0.5f
+    float cube_vertices[24 + 16] = {
+        -0.5f, -0.5f, -0.5f, -1, -1,
+        0.5f, -0.5f, -0.5f,  1, -1,
+        0.5f, 0.5f, -0.5f,   1, 1,
+        -0.5f, 0.5f, -0.5f,  -1, 1,
+        -0.5f, -0.5f, 0.5f,  -1, -1,
+        0.5f, -0.5f, 0.5f,   1, -1,
+        0.5f, 0.5f, 0.5f,    1, 1,
+        -0.5f, 0.5f, 0.5f,    -1, 1
     };
     int cube_triangles[36] = {
         0, 1, 3, 3, 1, 2,
@@ -26,13 +26,13 @@ namespace eng::meshes
         cube_triangles
     };
 
-    float triangle_vertices[9] = {
-        -0.5f, -0.5f, 0,
-        0.5f, -0.5f, 0,
-        0, 0.5f, 0
+    float triangle_vertices[9 + 6] = {
+        -0.5f, -0.5f,   0,        1, -1,
+         0.5f, -0.5f,   0,        1, -1,
+         0,     0.5f,   0,        0,  1
     };
     int triangle_triangles[3] = {
-        1, 2, 3
+        0, 1, 2
     };
 
     eng::Mesh triangle = {
@@ -40,13 +40,13 @@ namespace eng::meshes
         triangle_triangles
     };
 
-    float square_vertices[] = {
-     0.5f,  0.5f, 0.0f,  // top right
-     0.5f, -0.5f, 0.0f,  // bottom right
-    -0.5f, -0.5f, 0.0f,  // bottom left
-    -0.5f,  0.5f, 0.0f   // top left 
+    float square_vertices[12 + 8] = {
+         0.5f,   0.5f,  0.0f,       1, 1,
+         0.5f,  -0.5f,  0.0f,       1, 0,
+        -0.5f,  -0.5f,  0.0f,       0, 0,
+        -0.5f,   0.5f,  0.0f,       0, 1
     };
-    int square_indices[] = {  // note that we start from 0!
+    int square_indices[6] = {  // note that we start from 0!
         0, 1, 3,   // first triangle
         1, 2, 3    // second triangle
     };
