@@ -4,6 +4,7 @@
 #include "../include/RenderComponents.hpp"
 #include <iostream>
 using namespace eng;
+
 namespace eng
 {
 	class ObjectRendererData
@@ -15,22 +16,25 @@ namespace eng
 
 	class ObjectRenderer 
 	{
-		GLuint vbo, // Vertex Buffer Object
-			ebo, // Element Buffer Object
-			vao, // Vertex Something
-			vs, // Vertex Shader
-			fs, // Fragment Shader
-			sp; // Shader Program
-		int meshSize, // Mesh Size (in bytes)
-			meshLength, // Vertex Count
-			triCount; // Triangle Count * 3
 	public:
 		Mesh mesh;
-		Material material;
+		Mesh material;
+
+		GLuint shaderProgram;
 
 		void Render();
 
 		void Create(ObjectRendererData data, int vertCount, int triCount, float vertices[], int triangles[]);
+	private:
+		GLuint vbo, // Vertex Buffer Object
+			ebo, // Element Buffer Object
+			vao, // Vertex Something
+			vs, // Vertex Shader
+			fs; // Fragment Shader
+		int meshSize, // Mesh Size (in bytes)
+			meshLength, // Vertex Count
+			triCount; // Triangle Count * 3
+	
 	};
 
 

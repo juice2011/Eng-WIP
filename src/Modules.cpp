@@ -2,16 +2,13 @@
 
 void ObjectRenderer::Render()
 {
-    glUseProgram(sp);
+    glUseProgram(shaderProgram);
     glBindVertexArray(vao);
     glDrawElements(GL_TRIANGLES, 24, GL_UNSIGNED_INT, 0);
 }
 
 void ObjectRenderer::Create(ObjectRendererData data, int vertCount, int triCount, float vertices[], int triangles[])
 {
-    mesh = data.mesh;
-
-
     unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShader, 1, &data.material.shader.vert_data, NULL);
     glCompileShader(vertexShader);
@@ -36,7 +33,7 @@ void ObjectRenderer::Create(ObjectRendererData data, int vertCount, int triCount
         std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
     }
     // link shaders
-    unsigned int shaderProgram = glCreateProgram();
+    shaderProgram = glCreateProgram();
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);
     glLinkProgram(shaderProgram);
@@ -77,6 +74,5 @@ void ObjectRenderer::Create(ObjectRendererData data, int vertCount, int triCount
     vbo = VBO;
     ebo = EBO;
     vao = VAO;
-    sp = shaderProgram;
     
 }

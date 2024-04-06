@@ -45,10 +45,11 @@ int main()
 
 	renderobject.Create(renderdata, 3, 1, eng::meshes::cube_vertices, eng::meshes::cube_triangles);
 
-	//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	while (engine.Running(engine.window))
 	{
-		camera.BeginDraw();
+		camera.BeginDraw(Color(0.2f, 0.3f, 0.6f, 1));
+
 		renderobject.Render();
 		camera.Present(engine.window);
 	}

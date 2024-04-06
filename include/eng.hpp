@@ -3,6 +3,7 @@
 #include "../include/lib/glew.h"
 #include "../include/lib/glfw3.h"
 #include "../include/Modules.hpp"
+
 #include <iostream>
 #include <vector>
 
@@ -143,7 +144,7 @@ namespace eng {
 			this->backgroundColor = data.backgroundColor;
 		}
 
-		void BeginDraw();
+		void BeginDraw(Color c);
 		void Present(GLFWwindow* e);
 	};
 

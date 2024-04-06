@@ -1,4 +1,10 @@
 *.sln
 *.vcxproj
 *.filters
-.vs/
+*.obj
+*.exe
+*.pdb
+/.vs
+/obj
+/bin
+/obj

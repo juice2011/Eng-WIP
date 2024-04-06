@@ -2,6 +2,7 @@
 #include "../include/eng.hpp"
 #include <string>
 #include <vector>
+
 namespace eng
 {
 	class Mesh
@@ -15,6 +16,9 @@ namespace eng
 	public:
 		char* vert_data;
 		char* frag_data;
+		void SetValue(float v, std::string name, int o);
+		void SetValue(int v, std::string name, int o);
+		void SetValue(double v, std::string name, int o);
 	};
 
 	class Material {
